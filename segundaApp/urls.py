@@ -6,5 +6,5 @@ urlpatterns = [
     path('segunda/', views.inicio),
     #Para se muestre en la primera pagina la ruta debe quedar vacia 
     # y tambien debe quedar vacia en el archivo de url principal
-    path('', views.saludo)
+    path('saludo/', views.saludo)
 ]

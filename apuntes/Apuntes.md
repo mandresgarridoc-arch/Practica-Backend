@@ -62,5 +62,19 @@ urlpatterns = [\
 Para poner una de las rutas como principal, se deebn dejar dos comillas vacias en el archivo urls.py de la app y en el principal.
 
 
+Para crear una app con formato html y css:
+
+- A la altura de manage.py (raiz del proyecto) crear una carpeta llamada **templates** Aqui van los archivos HTML.
+- En el Archivo raiz de settings.py modificar templates para indicarle el directorio de la carpeta que usará.
+- Se debe modificar la lines que dice 'DIRS' y debe quedar 'DIRS': [BASE_DIR /  'templates'].
+
+Para el CSS se debe crear otra carpeta a la misma altura con el nombre **static** y dentro una  subcarpeta llamada **css** en este van los archivos css.
+- Hay que modificar los archivos raiz de setting.py para indicare a django donde buscar estos archivos css.
+- Debajo de la linea que dice STATIC_URL = 'static/' \
+Se debe ingresar la linea **STATICFILES_DIRS = [BASE_DIR / 'static']** que le indica a django donde buscar los archivos css
+
+
+
+
 
 

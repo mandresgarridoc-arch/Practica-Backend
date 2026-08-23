@@ -57,7 +57,8 @@ ROOT_URLCONF = 'Backend.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        #Aqui le indico la ruta de la carpeta templates, que es donde se encuentran mis archivos html
+        'DIRS': [BASE_DIR /  'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -118,6 +119,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/6.1/howto/static-files/
 
 STATIC_URL = 'static/'
+#Con esta linea le indico a django donde se encuentra la carpeta static, que es donde se encuentran mis archivos css y js
+STATICFILES_DIRS = [BASE_DIR / 'static']
 
 
 # Email
