@@ -22,5 +22,6 @@ from segundaApp import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('primera/', include('primeraApp.urls')),
+    #Esta ruta vacia es mi url principal, la primera que se muestra
     path('', include('segundaApp.urls'))
 ]
