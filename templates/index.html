@@ -1,4 +1,4 @@
-<!--Esta etiqueta le -->
+<!--Esta etiqueta le permite incluir archivos estáticos en la plantilla -->
 {% load static %}
 <!DOCTYPE html>
 <html lang="es">
@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
 </head>
 <body>
-    <h1>La hora actual es {{hora}}</h1>
+    <h1>La hora actual es: {{hora}}</h1>
     <p>Enlace a prueba de hora sin formato
     <a href ="/primera/hora/">Hora primeraApp</a>
     <p>Esta página ya está usando HTML y CSS real.</p>
